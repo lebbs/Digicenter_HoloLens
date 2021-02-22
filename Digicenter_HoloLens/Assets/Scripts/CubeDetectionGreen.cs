@@ -5,8 +5,8 @@ using UnityEngine;
 public class CubeDetectionGreen : MonoBehaviour
 {
     public SpawnCubes spawn;
-    //public GameObject right;
-    //public GameObject wrong;
+    public GameObject right;
+    public GameObject wrong;
 
 
     private void OnTriggerEnter(Collider other)
@@ -14,15 +14,15 @@ public class CubeDetectionGreen : MonoBehaviour
         if (other.gameObject.CompareTag("GreenSphere"))
         {
             Debug.Log("vihreä kuutio toimii.");
-      //      right.SetActive(true);
+            right.SetActive(true);
             other.gameObject.SetActive(false);
             spawn.SpawnObject();
-        //    StartCoroutine(ShowAndHide(right, 3.0f));
+            StartCoroutine(ShowAndHide(right, 3.0f));
         }
         else
         {
             Debug.Log("Väärän värinen kuutio laitettu");
-          //  wrong.SetActive(true);
+            wrong.SetActive(true);
         }
     }
 
@@ -35,7 +35,7 @@ public class CubeDetectionGreen : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-       // right.SetActive(false);
-      // wrong.SetActive(false);
+        right.SetActive(false);
+       wrong.SetActive(false);
     }
 }

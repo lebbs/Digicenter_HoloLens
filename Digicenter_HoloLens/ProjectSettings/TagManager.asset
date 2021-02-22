@@ -8,6 +8,8 @@ TagManager:
   - GreenSphere
   - RedSphere
   - YellowSphere
+  - UI
+  - Throwable
   layers:
   - Default
   - TransparentFX

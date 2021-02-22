@@ -10,6 +10,7 @@ TagManager:
   - YellowSphere
   - UI
   - Throwable
+  - Target
   layers:
   - Default
   - TransparentFX

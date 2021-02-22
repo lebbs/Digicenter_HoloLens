@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -1004289107870941419}
   - component: {fileID: -7536608299672883000}
   - component: {fileID: 8697235212847517661}
+  - component: {fileID: 6649965603792398001}
   m_Layer: 0
   m_Name: SphereThrowable
   m_TagString: Throwable
@@ -208,3 +209,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -1
+--- !u!114 &6649965603792398001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780636797991248211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4649ce433cf5b4d92ae72a799d747c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCollider1: {fileID: 3415154060008525985, guid: 8f9996db8fb28664e84e2c4f6250a14e,
+    type: 3}
+  spawnObjectOnCollision: {fileID: 2378287254677939185, guid: 237cf2d0cb3395c4b8184318b00e969f,
+    type: 3}
+  colorSpawnedObject: 1
+  destroyOnTargetCollision: 1

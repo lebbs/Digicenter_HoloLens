@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Score : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class Score : MonoBehaviour
         if (collision.gameObject.CompareTag("Throwable"))
         {
             Debug.Log("Maalin trigger toimii");
-
+            //GetComponent<ParticleSystem>().Play();
+            gameObject.SetActive(false);
         }
     }
+
 }

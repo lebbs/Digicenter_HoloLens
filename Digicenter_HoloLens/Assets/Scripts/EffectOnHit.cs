@@ -5,8 +5,8 @@ using UnityEngine;
 public class EffectOnHit : MonoBehaviour
 {
     public Collider targetCollider1;
-    //public Collider targetCollider2;
-    //public Collider targetCollider3;
+    public Collider targetCollider2;
+    public Collider targetCollider3;
     //public Collider targetCollider4;
     //public Collider targetCollider5;
     //public Collider targetCollider6;
@@ -16,11 +16,13 @@ public class EffectOnHit : MonoBehaviour
 
     public bool destroyOnTargetCollision = true;
 
+   
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider == targetCollider1 )
-            //collision.collider == targetCollider2 ||
-            //collision.collider == targetCollider3 ||
+        if (collision.collider == targetCollider1 ||
+            collision.collider == targetCollider2 ||
+            collision.collider == targetCollider3 )
             //collision.collider == targetCollider4 ||
             //collision.collider == targetCollider5 ||
             //collision.collider == targetCollider6)

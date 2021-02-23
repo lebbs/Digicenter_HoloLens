@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/BallThrow.unity
+    guid: 72f2e1d263ef54449b503d76afc1dc74
+  - enabled: 1
     path: Assets/Scenes/CubeGame.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity
-    guid: 3dd4a396b5225f8469b9a1eb608bfa57
   m_configObjects: {}

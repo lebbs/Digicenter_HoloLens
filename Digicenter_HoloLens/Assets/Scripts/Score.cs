@@ -5,6 +5,7 @@ using System;
 
 public class Score : MonoBehaviour
 {
+    public float sec = 3f;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Throwable"))
@@ -14,5 +15,8 @@ public class Score : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    
+
 
 }

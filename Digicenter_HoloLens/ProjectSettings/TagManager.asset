@@ -11,6 +11,8 @@ TagManager:
   - UI
   - Throwable
   - Target
+  - Target2
+  - Target1
   layers:
   - Default
   - TransparentFX

@@ -18,17 +18,19 @@ public class ReturnOriginalPosition : MonoBehaviour
         rigidbody.velocity = new Vector3(0, 0, 0);
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Floor"))
-    //    {
-    //        rigidbody = gameObject.GetComponent<Rigidbody>();
-    //        rigidbody.angularVelocity = new Vector3(0, 0, 0);
-    //        rigidbody.velocity = new Vector3(0, 0, 0);
-    //        gameObject.transform.position = originalPosition;
-    //        gameObject.transform.rotation = startRotation;
-    //    }
-    //}
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Target")||
+            collision.gameObject.CompareTag("Target1")||
+            collision.gameObject.CompareTag("Target2"))
+        {
+            rigidbody = gameObject.GetComponent<Rigidbody>();
+            rigidbody.angularVelocity = new Vector3(0, 0, 0);
+            rigidbody.velocity = new Vector3(0, 0, 0);
+            gameObject.transform.position = originalPosition;
+            gameObject.transform.rotation = startRotation;
+        }
+    }
 
     // Update is called once per frame
     void Update()

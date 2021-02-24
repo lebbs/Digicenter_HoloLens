@@ -170,7 +170,8 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 7051499739423557564}
+  constraintsManager: {fileID: 8010674258303457328, guid: 69c4eed7e0be59044aee7ef222316a6d,
+    type: 3}
   elasticsManager: {fileID: 0}
   onManipulationStarted:
     m_PersistentCalls:
@@ -222,6 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCollider1: {fileID: 0}
+  targetCollider2: {fileID: 0}
+  targetCollider3: {fileID: 0}
   spawnObjectOnCollision: {fileID: 0}
   colorSpawnedObject: 1
   destroyOnTargetCollision: 1
